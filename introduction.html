@@ -74,6 +74,8 @@
 
       a:link, a:visited {
         color: white;
+        background-color: transparent;
+        text-decoration: none;
       }
       a:hover {
         color: #62c9da;
@@ -85,7 +87,7 @@
         background-color: transparent;
         text-decoration: underline;
       }
-      a.selected:link a.selected:visited {
+      a.selected:link, a.selected:visited {
         color: #faaf40;
         background-color: transparent;
         text-decoration: underline;
@@ -103,9 +105,9 @@
 
         <div class="nav-wrap">
           <nav>
-            <a href="/"><span>home</span></a>
-            <a href="/introduction"><span>introduction</span></a>
-            <a href="/interviews"><span>interviews</span></a>
+            <a href="/">home</a>
+            <a href="/introduction" class="selected">introduction</a>
+            <a href="/interviews">interviews</a>
           </nav>
         </div>
       </div>
